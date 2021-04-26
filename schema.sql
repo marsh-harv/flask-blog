@@ -7,3 +7,12 @@ CREATE TABLE posts (
     title TEXT NOT NULL,
     content TEXT NOT NULL
 );
+
+DROP TABLE IF EXISTS login;
+
+CREATE TABLE login (
+    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email text not NULL,
+    password text not NULL
+)
+
